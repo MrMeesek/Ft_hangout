@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_write_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryBackground">
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="10dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="1.88"
+            android:ems="15"
+            android:hint="@string/hint_message_body"
+            android:importantForAutofill="no"
+            android:inputType="textAutoCorrect"
+            android:padding="5sp">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/message_send"
+            android:layout_width="40dp"
+            android:layout_height="27dp"
+            android:layout_margin="5sp"
+            android:layout_weight="0.07"
+            android:background="@drawable/ic_action_send"
+            android:onClick="sendMessage"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/smsChat"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_above="@id/bottom_write_bar"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#FFFFFF"
+        android:divider="#FFFFFF"
+        android:listSelector="#FFFFFF"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_write_bar"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal" />
+
+</RelativeLayout>

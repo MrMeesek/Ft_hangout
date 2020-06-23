@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        tools:context=".ModifyContact">
+
+        <ImageView
+            android:id="@+id/contactPicture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|top"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/colorSelectedBackground"
+                    android:contentDescription="@null"
+
+                    android:src="@drawable/ic_account_box" />
+
+                <EditText
+                    android:id="@+id/contactInfo"
+                    style="@style/TextStyle.ModelItem.Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusedByDefault="false"
+                    android:hint="@string/hint_contact_name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/colorSelectedBackground"
+                    android:contentDescription="@null"
+                    android:src="@android:drawable/ic_menu_call" />
+
+                <EditText
+                    android:id="@+id/contactPhoneNumber"
+                    style="@style/TextStyle.ModelItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusedByDefault="false"
+                    android:hint="@string/hint_phone_number"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:paddingTop="0dp"
+
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/colorSelectedBackground"
+                    android:contentDescription="@null"
+                    android:src="@android:drawable/ic_menu_mylocation" />
+
+
+                <EditText
+                    android:id="@+id/contactAddress"
+                    style="@style/TextStyle.ModelItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusedByDefault="false"
+                    android:hint="@string/hint_postal_address"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/colorSelectedBackground"
+                    android:contentDescription="@null"
+                    android:src="@android:drawable/ic_dialog_email" />
+
+
+                <EditText
+                    android:id="@+id/contactEmail"
+                    style="@style/TextStyle.ModelItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusedByDefault="false"
+                    android:hint="@string/hint_email_address"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/confirmChangesButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorPrimaryIcon"
+                android:contentDescription="@string/cd_save_contact"
+                android:src="@drawable/ic_save" />
+
+            <ImageButton
+                android:id="@+id/deleteContact"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimaryIcon"
+                android:contentDescription="@string/cd_delete_contact"
+                android:src="@drawable/ic_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

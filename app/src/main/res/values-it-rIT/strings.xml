@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ft_hangout</string>
+    <string name="cd_add_contact">Aggiungi nuovo contatto</string>
+    <string name="cd_save_contact">Salva contatto</string>
+    <string name="cd_delete_contact">Rimuovi contatto</string>
+    <string name="cd_call_contact">Chiama contatto</string>
+    <string name="cd_message_contact">Scrivi al contatto</string>
+    <string name="hint_contact_name">nome</string>
+    <string name="hint_phone_number">numero di telefono</string>
+    <string name="hint_postal_address">indirizzo postale</string>
+    <string name="hint_email_address">indirizzo email</string>
+    <string name="hint_message_body">messaggio</string>
+    <string name="button_modify_contact">Modifica contatto</string>
+    <string name="theme_blue">Blu</string>
+    <string name="theme_green">Verde</string>
+    <string name="theme_red">Rosso</string>
+    <string name="toast_invalid_phone_number">Numero di telefono non valido</string>
+</resources>
