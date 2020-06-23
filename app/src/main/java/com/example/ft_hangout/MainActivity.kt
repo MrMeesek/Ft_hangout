@@ -67,9 +67,9 @@ class MainActivity : BaseActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         val app = application as FtHangout
         val resultMessage: String = when (resultCode) {
-            ContactAction.NEW_CONTACT.value -> "New Contact Created"
-            ContactAction.MODIFIED_CONTACT.value -> "Contact modified"
-            ContactAction.DELETED_CONTACT.value -> "Contact deleted"
+            ContactAction.NEW_CONTACT.value -> getString(R.string.toast_new_contact_created)
+            ContactAction.MODIFIED_CONTACT.value -> getString(R.string.toast_contact_modified)
+            ContactAction.DELETED_CONTACT.value -> getString(R.string.toast_contact_deleted)
             else -> ""
         }
         if (resultMessage.isNotEmpty()) Toast.makeText(this, resultMessage, Toast.LENGTH_SHORT)
@@ -79,6 +79,7 @@ class MainActivity : BaseActivity() {
             val adapter = findViewById<ListView>(R.id.contacts).adapter as ContactsAdapter
             adapter.notifyDataSetChanged()
         }
+        getString(R.string.toast_new_contact_created)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

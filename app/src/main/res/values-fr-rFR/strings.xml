@@ -16,4 +16,8 @@
     <string name="theme_blue">Bleu</string>
     <string name="theme_red">Rouge</string>
     <string name="toast_invalid_phone_number">" Numéro de téléphone invalide"</string>
+    <string name="toast_new_contact_created">" Nouveau contact ajouté"</string>
+    <string name="toast_contact_deleted">"Contact supprimé "</string>
+    <string name="toast_contact_modified">"Contact changé "</string>
+    <string name="toast_sms_permissions_required">" L'application a besoin d'autorisations pour utiliser SMS"</string>
 </resources>

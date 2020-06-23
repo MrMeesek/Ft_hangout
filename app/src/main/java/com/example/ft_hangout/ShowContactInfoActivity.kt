@@ -55,8 +55,8 @@ class ShowContactInfoActivity : BaseActivity() {
         }
         val app = application as FtHangout
         val resultMessage: String = when (resultCode) {
-            ContactAction.NEW_CONTACT.value -> "New contact created"
-            ContactAction.MODIFIED_CONTACT.value -> "Contact modified"
+            ContactAction.NEW_CONTACT.value -> getString(R.string.toast_new_contact_created)
+            ContactAction.MODIFIED_CONTACT.value -> getString(R.string.toast_contact_modified)
             else -> ""
         }
         if (resultMessage.isNotEmpty()) Toast.makeText(this, resultMessage, Toast.LENGTH_SHORT)

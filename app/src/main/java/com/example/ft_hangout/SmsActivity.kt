@@ -125,7 +125,11 @@ class SmsActivity : BaseActivity(), SmsBroadcastListener {
                     findViewById<ListView>(R.id.smsChat).adapter =
                         SmsAdapter(fetchContactConversation(), this)
                 } else {
-                    Toast.makeText(this, "the app need permission to read SMS", Toast.LENGTH_LONG)
+                    Toast.makeText(
+                        this,
+                        getString(R.string.toast_sms_permissions_required),
+                        Toast.LENGTH_LONG
+                    )
                         .show()
                     finish()
                 }

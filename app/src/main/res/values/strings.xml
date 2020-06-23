@@ -15,5 +15,9 @@
     <string name="theme_green">Green</string>
     <string name="theme_red">Red</string>
     <string name="toast_invalid_phone_number">Invalid phone number</string>
+    <string name="toast_new_contact_created">New contact created</string>
+    <string name="toast_contact_deleted">Contact deleted</string>
+    <string name="toast_contact_modified">Contact modified</string>
+    <string name="toast_sms_permissions_required">The app need permissions to use SMS</string>
 
 </resources>
